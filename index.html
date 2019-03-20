@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="container">
@@ -34,7 +35,7 @@
                 <div class="card bg-warning">
                     <div class="card-body">
                         <h4 class="card-title text-center">Target Score</h4>
-                        <p class="card-text text-center"><strong>89</strong></p>
+                        <p class="card-text text-center" id="targetScore"></p>
                     </div>
                 </div>
             </div>
@@ -43,7 +44,7 @@
                 <div class="card bg-warning">
                     <div class="card-body">
                         <h4 class="card-title text-center">Your Score</h4>
-                        <p class="card-text text-center"><strong>11</strong></p>
+                        <p class="card-text text-center" id="yourScore"></p>
                     </div>
                 </div>
             </div>
@@ -52,35 +53,44 @@
                 <div class="card bg-warning">
                     <div class="card-body text-center">
                         <h4 class="card-title text-center">Crystals</h4>
-                        <img src="assets/images/blue.jpg" alt="blue crystal" width="100px" height="100px">
-                        <img src="assets/images/green.jpg" alt="green crystal" width="100px" height="100px">
-                        <img src="assets/images/red.jpg" alt="red crystal" width="100px" height="100px">
-                        <img src="assets/images/yellow.jpg" alt="yellow crystal" width="100px" height="100px">
+                        <img src="assets/images/blue.jpg" alt="blue crystal" width="100px" height="100px" id="blue">
+                        <img src="assets/images/red.jpg" alt="red crystal" width="100px" height="100px" id="red">
+                        <img src="assets/images/green.jpg" alt="green crystal" width="100px" height="100px" id="green">
+                        <img src="assets/images/yellow.jpg" alt="yellow crystal" width="100px" height="100px" id="yellow">
                     </div>
                 </div>
             </div>
         </div>
         <!-- Counters Row -->
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="card bg-warning">
                     <div class="card-body">
                         <h4 class="card-title text-center">Win Count</h4>
-                        <p class="card-text text-center"><strong>0</strong></p>
+                        <p class="card-text text-center" id="winCount">0</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="card bg-warning">
                     <div class="card-body">
                         <h4 class="card-title text-center">Loss Count</h4>
-                        <p class="card-text text-center"><strong>0</strong></p>
+                        <p class="card-text text-center" id="lossCount">0</p>
+                    </div>
+                </div>               
+            </div>
+            <div class="col-lg-4">
+                <div class="card bg-warning">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Rounds</h4>
+                        <p class="card-text text-center" id="roundCount">0</p>
                     </div>
                 </div>               
             </div>
         </div>
     </div>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>
