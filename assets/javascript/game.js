@@ -42,7 +42,7 @@ var start = function() {
     // Reset Current Score
     currentScore = 0;
     // Reset Round Count
-    roundCount = -1;
+    roundCount = 0;
     // Set a new Target Score (between 19-120)
     targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
     // Set different values for each crystal (1-12)
@@ -73,12 +73,14 @@ var checkWin = function () {
         lossCount++;
         $("#lossCount").html(lossCount);
         start();
+        roundCount -= 1;
     }
     else if (currentScore == targetScore) {
         alert("YEE!! You win!!");
         winCount++;
         $("#winCount").html(winCount);
         start();
+        roundCount -= 1;
     }
 };
 
