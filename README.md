@@ -13,4 +13,4 @@ The goal of Crystal Collector is to match the target score.  Each crystal will b
 Clone the project to your computer, right click, and open in default browser.  Then go ahead and see if you can match the target score!
 
 ### Screenshot
-![Crystal-Collector](/clicky-game-of-thrones/public/assets/images/screenshot/screenshot.png?raw=true "Crystal-Collector")
+![Crystal-Collector](/assets/images/screenshot/screenshot.png?raw=true "Crystal-Collector")
